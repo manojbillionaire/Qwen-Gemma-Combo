@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Minimal Blue Scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.3);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(99, 102, 241, 0.1) transparent;
+}
+
+/* Specific elements that need scrollbars */
+.custom-scrollbar {
+  overflow-y: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.15);
+}
+
+/* Markdown Styling */
+.markdown-body {
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+.markdown-body h1 { @apply text-2xl font-black mb-4 mt-6 text-white; }
+.markdown-body h2 { @apply text-xl font-bold mb-3 mt-5 text-white; }
+.markdown-body h3 { @apply text-lg font-bold mb-2 mt-4 text-white; }
+.markdown-body p { @apply mb-3 text-slate-300; }
+.markdown-body ul { @apply list-disc list-inside mb-4 space-y-1 text-slate-300; }
+.markdown-body ol { @apply list-decimal list-inside mb-4 space-y-1 text-slate-300; }
+.markdown-body li { @apply mb-1; }
+.markdown-body strong { @apply font-black text-indigo-400; }
+.markdown-body code { @apply bg-white/10 px-1.5 py-0.5 rounded font-mono text-[10px] text-amber-400; }
+.markdown-body pre { @apply bg-[#0d1117] p-4 rounded-xl border border-white/5 my-4 overflow-x-auto; }
+.markdown-body pre code { @apply bg-transparent p-0 text-slate-300 block; }
+.markdown-body blockquote { @apply border-l-4 border-indigo-500/50 pl-4 italic my-4 text-slate-400; }
+.markdown-body table { @apply w-full border-collapse mb-4; }
+.markdown-body th { @apply border border-white/10 px-3 py-2 bg-white/5 text-[10px] font-black uppercase text-slate-400; }
+.markdown-body td { @apply border border-white/10 px-3 py-2 text-xs text-slate-300; }
+.markdown-body a { @apply text-indigo-400 hover:underline transition-all; }
+.markdown-body hr { @apply border-t border-white/5 my-6; }

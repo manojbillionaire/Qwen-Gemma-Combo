@@ -1,0 +1,6 @@
+{
+  "name": "Nexus Justice — Gemma 4 Edition",
+  "description": "An advanced legal assistance tool powered by local AI processing (Gemma 4).",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
